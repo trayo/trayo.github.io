@@ -13,15 +13,16 @@ In this tutorial I'm going to show you the basics of importing color schemes,
 customizing those schemes and setting up a background. The shot below is our
 destination final product.
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png 850 'So awesome!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png 850 'So awesome!' %}
+
 
 
 ## Let's get started!
 
 Here's what my terminal looked like when I started, with a shot of vim for good measure:
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/1_term_default_vim.png 350 'So boring!' %}
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/2_term_default.png 375 'Kind of cool, but still not super cool.' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png 350 'So boring!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png 375 'Kind of cool, but still not super cool.' %}
 
 
 A quick [google search](http://goo.gl/Y1A32Q) will show some
@@ -30,7 +31,7 @@ We're going to use the schemes available at [iterm2colorschemes.com](http://iter
 since they have a bunch of ready made schemes available.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/3_theme_examples.png 400 'Mathematical!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/3_theme_examples.png 400 'Mathematical!' %}
 
 
 When you find one you like we're going to clone
@@ -59,13 +60,13 @@ or use the keyboard shortcut ( ⌘ + , ) .
 Once you're in the preferences window, click on the *profiles* button.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/4_preferences.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/4_preferences.png 800 %}
 
 
 Then click on the *colors* tab.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/5_profiles.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/5_profiles.png 800 %}
 
 
 ## Importing colors!
@@ -75,13 +76,13 @@ At the bottom there is a *load presets* button that will let us import the color
 that we cloned.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/6_profiles_color_tab.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/6_profiles_color_tab.png 800 %}
 
 
 In the little drop down window click *import*.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/7_profiles_color_import.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/7_profiles_color_import.png 800 %}
 
 
 Choose the theme that you would like to import. You can import as
@@ -90,7 +91,7 @@ many as you like, but you don't need to import all of them. I chose by looking a
 ones that caught my eye and trying each one out.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/8_file_itermcolors.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/8_file_itermcolors.png 800 %}
 
 
 The theme you choose will then appear in the *load presets* drop down where you can select it.
@@ -104,20 +105,20 @@ If for some reason it didn't update immediately, exit preferences and open up th
 chooser by hitting ( ⌘ + i ). You will get the following window.  
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/17_command_eye.png 500 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png 500 %}
 
 
 Select the profile that you are working with. If you didn't create a profile, then your
 profile will be the one available called *default*. Then choose *change profile*.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/18_change_profile.png 600 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png 600 %}
 
 
 Now we should see our colors change! Woo!
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/10_still_pink.png 400 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/10_still_pink.png 400 %}
 
 
 ## Customize a little more!
@@ -138,7 +139,7 @@ Of the two magenta boxes, the one I want is on the left. When you click it you g
 window.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/11_change_magenta.png 800 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/11_change_magenta.png 800 %}
 
 
 The tabs at the top of this window have some different ways to pick colors. I used the
