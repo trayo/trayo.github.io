@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Themes, | Yoder Bacon]]></title>
   <link href="http://trayo.github.io/blog/categories/themes/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-10-24T07:06:52-07:00</updated>
+  <updated>2014-10-24T09:02:38-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -30,8 +30,8 @@ destination final product.</p>
 
 <p>Here&rsquo;s what my terminal looked like when I started, with a shot of vim for good measure:</p>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png</a>&#8221; width=&#8221;350&#8221; title=&#8221;&lsquo;So boring!&rsquo;&#8221; >
-<img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png</a>&#8221; width=&#8221;375&#8221; title=&#8221;&lsquo;Kind of cool, but still not super cool.&rsquo;&#8221; ></p>
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png</a>&#8221; width=&#8221;375&#8221; title=&#8221;&lsquo;So boring!&rsquo;&#8221; >
+<img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png</a>&#8221; width=&#8221;350&#8221; title=&#8221;&lsquo;Kind of cool, but still not super cool.&rsquo;&#8221; ></p>
 
 <p>A quick <a href="http://goo.gl/Y1A32Q">google search</a> will show some
 results for awesome color schemes already made by the community.<br/>
@@ -105,33 +105,68 @@ profile will be the one available called <em>default</em>. Then choose <em>chang
 <h2>Customize a little more!</h2>
 
 <p>In the <em>colors tab</em> in <em>preferences</em> there are some color boxes that change the overall
-colors. The background box here is used you want to change your background color, but at the
-bottom of the tutorial I will show you how to select a wallpaper instead of having a
-plain solid color for a background.</p>
+colors. The background box here is used you want to change your background color, but at the end of the tutorial I
+will show you how to select a wallpaper instead of having a plain solid color for a background.</p>
 
 <p>The bar for me that is pink with the time on it didn&rsquo;t change and doesn&rsquo;t quite match the rest
-of the colors in the scheme so it becomes a prime candidate.</p>
+of the colors in the scheme so it becomes a prime candidate for customizing.</p>
 
-<p>The colors back on <em>preferences</em> correspond directly to what is seen on screen.
-Of the two magenta boxes, the one I want is on the left. When you click it you get the following
-window.</p>
+<p>The colors back on <em>preferences</em> correspond directly to what is seen on screen and this is what
+the scheme is changing.<br/>
+Of the two magenta boxes, the one I want is on the left.</p>
 
 <p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/11_change_magenta.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/11_change_magenta.png</a>&#8221; width=&#8221;800&#8221;></p>
 
-<p>The tabs at the top of this window have some different ways to pick colors. I used the
-color wheel, but the color palette tab in the middle is an awesome source too.</p>
+<p>The following window shows up when it&rsquo;s clicked. The tabs at the top of this window have some
+different ways to pick colors. I used the color wheel, but the color palette tab in the middle
+is an awesome source too.</p>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/9_under_middle_line.png">https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/9_under_middle_line.png</a>&#8221; width=&#8221;400&#8221;></p>
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/12_under_middle_line.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/12_under_middle_line.png</a>&#8221; width=&#8221;400&#8221;></p>
 
 <p>If you use the color wheel, I recommend keeping the arrow on the bar to the right of the color
-wheel slightly under the middle line, but it will vary based on your preferences and scheme.</p>
+wheel slightly under the middle line, but it will vary based on your preferences and scheme.<br/>
+Now we have a new color for the bar.</p>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/10_new_bar_color.png">https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/10_new_bar_color.png</a>&#8221; width=&#8221;400&#8221;></p>
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/13_new_bar_color.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/13_new_bar_color.png</a>&#8221; width=&#8221;400&#8221;></p>
 
-<p>Again, if for some reason it didn&rsquo;t update immediately, open up the profile chooser by hitting
-( ⌘ + i ) and click the <em>change profile</em> button.</p>
+<h2>If it didn&rsquo;t work right away:</h2>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/15_change_profile.png">https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/15_change_profile.png</a>&#8221; width=&#8221;400&#8221;></p>
+<p>Again, if for some reason it didn&rsquo;t update immediately, exit preferences and open up the profile
+chooser by hitting ( ⌘ + i ). You will get the following window.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png</a>&#8221; width=&#8221;500&#8221;></p>
+
+<p>Select the profile that you are working with. If you didn&rsquo;t create a profile, then your
+profile will be the one available called <em>default</em>. Then choose <em>change profile</em>.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png</a>&#8221; width=&#8221;600&#8221;></p>
+
+<h2>Customize the background image!</h2>
+
+<p>Back in the <em>Preferences</em> and under <em>Profiles</em>, open the <em>Window</em> tab.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/14_click_window.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/14_click_window.png</a>&#8221; width=&#8221;600&#8221;></p>
+
+<p>Click on the little check box for <em>Background Image</em> to open the window where you can select your background.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/15_click_background_box.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/15_click_background_box.png</a>&#8221; width=&#8221;600&#8221;></p>
+
+<p>Depending on your background&rsquo;s resolution, I recommend turing on <em>Tile Image</em>.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/16_tile_image.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/16_tile_image.png</a>&#8221; width=&#8221;600&#8221;></p>
+
+<p>If your background is the same resolution of you monitor or larger, this will prevent the background image from scaling when the window size changes.</p>
+
+<h2>Final product!</h2>
+
+<p>This is again the final product. It&rsquo;s more pleasing that just a plain black background and some white text.
+You can also see the way tiling the image works when the window is half size and full size.</p>
+
+<p>Thank you for reading!</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/19_final_shot_small.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/19_final_shot_small.png</a>&#8221; width=&#8221;600&#8221;></p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png</a>&#8221; width=&#8221;600&#8221;></p>
 ]]></content>
   </entry>
   
