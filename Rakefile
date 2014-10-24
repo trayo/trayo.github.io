@@ -53,7 +53,7 @@ end
 #######################
 
 desc "Generate jekyll site"
-task :gen do
+task :generate do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "## Generating Site with Jekyll"
   system "compass compile --css-dir #{source_dir}/stylesheets"
@@ -77,7 +77,7 @@ task :watch do
 end
 
 desc "preview the site in a web browser"
-task :pre do
+task :preview do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass. Starting Rack on port #{server_port}"
   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
@@ -215,7 +215,7 @@ end
 ##############
 
 desc "Default deploy task"
-task :dep do
+task :deploy do
   # Check if preview posts exist, which should not be published
   if File.exists?(".preview-mode")
     puts "## Found posts in preview mode, regenerating files ..."
@@ -228,7 +228,7 @@ task :dep do
 end
 
 desc "Generate website and deploy"
-task :gendep => [:integrate, :generate, :deploy] do
+task :gen_deploy => [:integrate, :generate, :deploy] do
 end
 
 desc "copy dot files for deployment"
