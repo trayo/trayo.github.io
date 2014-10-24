@@ -21,8 +21,8 @@ destination final product.
 
 Here's what my terminal looked like when I started, with a shot of vim for good measure:
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png 350 'So boring!' %}
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png 375 'Kind of cool, but still not super cool.' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png 375 'So boring!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png 350 'Kind of cool, but still not super cool.' %}
 
 
 A quick [google search](http://goo.gl/Y1A32Q) will show some
@@ -98,7 +98,7 @@ The theme you choose will then appear in the *load presets* drop down where you 
 It should reflect immediately because we are working on the default profile.
 
 
-##If it didn't work right away:
+## If it didn't work right away:
 
 
 If for some reason it didn't update immediately, exit preferences and open up the profile
@@ -125,39 +125,90 @@ Now we should see our colors change! Woo!
 
 
 In the *colors tab* in *preferences* there are some color boxes that change the overall
-colors. The background box here is used you want to change your background color, but at the
-bottom of the tutorial I will show you how to select a wallpaper instead of having a
-plain solid color for a background.  
+colors. The background box here is used you want to change your background color, but at the end of the tutorial I
+will show you how to select a wallpaper instead of having a plain solid color for a background.  
 
 
 The bar for me that is pink with the time on it didn't change and doesn't quite match the rest
-of the colors in the scheme so it becomes a prime candidate.  
+of the colors in the scheme so it becomes a prime candidate for customizing.
 
 
-The colors back on *preferences* correspond directly to what is seen on screen.
-Of the two magenta boxes, the one I want is on the left. When you click it you get the following
-window.
+The colors back on *preferences* correspond directly to what is seen on screen and this is what
+the scheme is changing.  
+Of the two magenta boxes, the one I want is on the left.
 
 
 {% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/11_change_magenta.png 800 %}
 
 
-The tabs at the top of this window have some different ways to pick colors. I used the
-color wheel, but the color palette tab in the middle is an awesome source too.  
+The following window shows up when it's clicked. The tabs at the top of this window have some
+different ways to pick colors. I used the color wheel, but the color palette tab in the middle
+is an awesome source too.  
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/9_under_middle_line.png 400 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/12_under_middle_line.png 400 %}
 
 
 If you use the color wheel, I recommend keeping the arrow on the bar to the right of the color
-wheel slightly under the middle line, but it will vary based on your preferences and scheme.
+wheel slightly under the middle line, but it will vary based on your preferences and scheme.  
+Now we have a new color for the bar.
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/10_new_bar_color.png 400 %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/13_new_bar_color.png 400 %}
 
 
-Again, if for some reason it didn't update immediately, open up the profile chooser by hitting
-( ⌘ + i ) and click the *change profile* button.
+## If it didn't work right away:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/15_change_profile.png 400 %}
+Again, if for some reason it didn't update immediately, exit preferences and open up the profile
+chooser by hitting ( ⌘ + i ). You will get the following window.  
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png 500 %}
+
+
+Select the profile that you are working with. If you didn't create a profile, then your
+profile will be the one available called *default*. Then choose *change profile*.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png 600 %}
+
+
+## Customize the background image!
+
+
+Back in the *Preferences* and under *Profiles*, open the *Window* tab.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/14_click_window.png 600 %}
+
+
+Click on the little check box for *Background Image* to open the window where you can select your background.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/15_click_background_box.png 600 %}
+
+
+Depending on your background's resolution, I recommend turing on *Tile Image*.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/16_tile_image.png 600 %}
+
+
+If your background is the same resolution of you monitor or larger, this will prevent the background image from scaling when the window size changes.
+
+
+## Final product!
+
+
+This is again the final product. It's more pleasing that just a plain black background and some white text.
+You can also see the way tiling the image works when the window is half size and full size.  
+
+
+Thank you for reading!
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/19_final_shot_small.png 600 %}
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png 600 %}
