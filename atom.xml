@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://trayo.github.io/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-10-23T17:48:04-07:00</updated>
+  <updated>2014-10-23T21:46:39-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Customize iTerm]]></title>
+    <link href="http://trayo.github.io/blog/2014/10/04/how-to-customize-iterm/"/>
+    <updated>2014-10-04T19:12:24-07:00</updated>
+    <id>http://trayo.github.io/blog/2014/10/04/how-to-customize-iterm</id>
+    <content type="html"><![CDATA[<p>Hello!<br/>
+Welcome to my tutorial on customizing iTerm!
+In this tutorial I&rsquo;m going to show you the basics of importing color schemes,
+customizing those schemes and setting up a background. The shot below is our
+destination final product.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png" width="850" title="'So awesome!'" ></p>
+
+<h2>Let&rsquo;s get started!</h2>
+
+<p>Here&rsquo;s what my terminal looked like when I started, with a shot of vim for good measure:</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/1_term_default_vim.png" width="350" title="'So boring!'" >
+<img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/2_term_default.png" width="375" title="'Kind of cool, but still not super cool.'" ></p>
+
+<p>A quick <a href="http://goo.gl/Y1A32Q">google search</a> will show some
+results for awesome color schemes already made by the community.<br/>
+We&rsquo;re going to use the schemes available at <a href="http://iterm2colorschemes.com/">iterm2colorschemes.com</a>
+since they have a bunch of ready made schemes available.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/3_theme_examples.png" width="400" title="'Mathematical!'" ></p>
+
+<p>When you find one you like we&rsquo;re going to clone
+<a href="https://github.com/mbadolato/iTerm2-Color-Schemes">the repository</a> off of Github. The files
+aren&rsquo;t very large and you&rsquo;ll have them readily available for quickly switching between colors.</p>
+
+<p><img class="top" src="http://i.imgur.com/N1p1G40.png" width="400" title="'ALL THE THINGS'" ></p>
+
+<p>Open up that terminal and navigate to a directory where you would like to clone the repo.
+I used my Documents folder.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd Documents/  
+</span><span class='line'>$ git clone https://github.com/mbadolato/iTerm2-Color-Schemes  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>Still in terminal, open up preferences. This can be done either one of two ways:<br/>
+from the menu bar under iTerm > Preferences<br/>
+or use the keyboard shortcut ( ⌘ + , ) .</p>
+
+<p>Once you&rsquo;re in the preferences window, click on the <em>profiles</em> button.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/4_preferences.png" width="800"></p>
+
+<p>Then click on the <em>colors</em> tab.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/5_profiles.png" width="800"></p>
+
+<h2>Importing colors!</h2>
+
+<p>At the bottom there is a <em>load presets</em> button that will let us import the color themes
+that we cloned.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/6_profiles_color_tab.png" width="800"></p>
+
+<p>In the little drop down window click <em>import</em>.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/7_profiles_color_import.png" width="800"></p>
+
+<p>Choose the theme that you would like to import. You can import as
+many as you like, but you don&rsquo;t need to import all of them. I chose by looking at
+<a href="http://iterm2colorschemes.com/">iterm2colorschemes.com</a> and making a list of the
+ones that caught my eye and trying each one out.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/8_file_itermcolors.png" width="800"></p>
+
+<p>The theme you choose will then appear in the <em>load presets</em> drop down where you can select it.
+It should reflect immediately because we are working on the default profile.</p>
+
+<h2>If it didn&rsquo;t work right away:</h2>
+
+<p>If for some reason it didn&rsquo;t update immediately, exit preferences and open up the profile
+chooser by hitting ( ⌘ + i ). You will get the following window.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/17_command_eye.png" width="500"></p>
+
+<p>Select the profile that you are working with. If you didn&rsquo;t create a profile, then your
+profile will be the one available called <em>default</em>. Then choose <em>change profile</em>.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/18_change_profile.png" width="600"></p>
+
+<p>Now we should see our colors change! Woo!</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/10_still_pink.png" width="400"></p>
+
+<h2>Customize a little more!</h2>
+
+<p>In the <em>colors tab</em> in <em>preferences</em> there are some color boxes that change the overall
+colors. The background box here is used you want to change your background color, but at the
+bottom of the tutorial I will show you how to select a wallpaper instead of having a
+plain solid color for a background.</p>
+
+<p>The bar for me that is pink with the time on it didn&rsquo;t change and doesn&rsquo;t quite match the rest
+of the colors in the scheme so it becomes a prime candidate.</p>
+
+<p>The colors back on <em>preferences</em> correspond directly to what is seen on screen.
+Of the two magenta boxes, the one I want is on the left. When you click it you get the following
+window.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/files/source/_posts/images_customize_iterm/11_change_magenta.png" width="800"></p>
+
+<p>The tabs at the top of this window have some different ways to pick colors. I used the
+color wheel, but the color palette tab in the middle is an awesome source too.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/9_under_middle_line.png" width="400"></p>
+
+<p>If you use the color wheel, I recommend keeping the arrow on the bar to the right of the color
+wheel slightly under the middle line, but it will vary based on your preferences and scheme.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/10_new_bar_color.png" width="400"></p>
+
+<p>Again, if for some reason it didn&rsquo;t update immediately, open up the profile chooser by hitting
+( ⌘ + i ) and click the <em>change profile</em> button.</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/master/source/_posts/image_source_2014-10-04/15_change_profile.png" width="400"></p>
+]]></content>
+  </entry>
   
 </feed>
