@@ -4,7 +4,7 @@
   <title><![CDATA[Yoder Bacon]]></title>
   <link href="http://trayo.github.io/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-10-24T14:14:06-07:00</updated>
+  <updated>2014-10-30T11:34:03-06:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Customize iTerm]]></title>
-    <link href="http://trayo.github.io/blog/2014/10/04/how-to-customize-iterm/"/>
-    <updated>2014-10-04T19:12:24-07:00</updated>
-    <id>http://trayo.github.io/blog/2014/10/04/how-to-customize-iterm</id>
+    <link href="http://trayo.github.io/blog/2014/10/22/how-to-customize-iterm/"/>
+    <updated>2014-10-22T20:12:24-06:00</updated>
+    <id>http://trayo.github.io/blog/2014/10/22/how-to-customize-iterm</id>
     <content type="html"><![CDATA[<p>Hello!<br/>
 Welcome to my tutorial on customizing iTerm!
 In this tutorial I&rsquo;m going to show you the basics of importing color schemes,
