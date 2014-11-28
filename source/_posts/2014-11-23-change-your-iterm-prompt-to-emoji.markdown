@@ -67,3 +67,13 @@ and it'll be the one I'll be selecting.
 
 
 {% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/6_special_pizza.png 700 'My spirit animal.' %}
+
+
+Your bash profile should now have your emoji in it!
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/7_text_edit_pizza.png 700 'Yup, definitely the best.' %}
+
+
+I *highly* recommend adding a space or two after the
+emoji, otherwise you may end typinggs
