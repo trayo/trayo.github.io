@@ -51,8 +51,8 @@ search with `⌘+F`.
 {% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/4_text_edit_dollar.png 700 'Did you find it?' %}
 
 
-Once you find it, highlight the leading escape \ and the
-$. Then open up the Apple special characters
+Once you find it, highlight the leading escape `\` and
+the `$`. Then open up the Apple special characters
 menu with `^ ⌘ Space` or by finding it at the bottom of
 the edit menu.
 
