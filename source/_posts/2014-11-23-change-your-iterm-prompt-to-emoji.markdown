@@ -40,4 +40,4 @@ in your terminal. You should get something like the
 following:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/3_open_bash.png 700 'So scary!' %}
