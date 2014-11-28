@@ -20,7 +20,7 @@ When we left off in the last tutorial we ended up with
 a terminal window similar to this:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 600 'Still awesome!' %}
 
 
 ## Let's do that change thing!
@@ -41,3 +41,29 @@ following:
 
 
 {% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/3_open_bash.png 700 'So scary!' %}
+
+
+In this file you're going to look for `\$`. For me it was
+at the bottom of the file. You can also find it doing a
+search with `⌘+F`.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/4_text_edit_dollar.png 700 'Did you find it?' %}
+
+
+Once you find it, highlight the leading escape \ and the
+$. Then open up the Apple special characters
+menu with `^ ⌘ Space` or by finding it at the bottom of
+the edit menu.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/5_special_characters.png 700 'Did you find it?' %}
+
+
+This will open up the built Apple menu with special
+characters and emoji. Here you can select any emoji
+you'd like, but, obviously, pizza is the best emoji
+and it'll be the one I'll be selecting.
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/6_special_pizza.png 700 'My spirit animal.' %}
