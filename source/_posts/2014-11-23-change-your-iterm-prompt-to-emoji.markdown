@@ -19,4 +19,13 @@ When we left off in the last tutorial we ended up with
 a terminal window similar to this:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 400 'Still awesome!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
+
+
+## Let's do that change thing!
+
+Here you will see the dollar sign I was referencing. We
+can change that to anything we want, but more
+specifically we want a sweet emoji.
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
