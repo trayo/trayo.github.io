@@ -51,7 +51,13 @@ $ cd Documents/
 $ git clone https://github.com/mbadolato/iTerm2-Color-Schemes  
 ```
 
-The creators of the repository were kind enough
+The creators of the repository were kind enough to include an awesome terminal command
+that will let you cycle through all the colors and find one that you like. Simply
+enter this command in your terminal:
+`tools/preview.rb schemes/*`
+
+And it will cycle through the schemes when you push a button on your keyboard. You can
+exit the cycle by hitting `ctrl + C` when you find one that you want to import.
 
 
 Still in terminal, open up preferences. This can be done either one of two ways:  
@@ -88,9 +94,10 @@ In the little drop down window click *import*.
 
 
 Choose the theme that you would like to import. You can import as
-many as you like, but you don't need to import all of them. I chose by looking at
-[iterm2colorschemes.com](http://iterm2colorschemes.com/) and making a list of the
-ones that caught my eye and trying each one out.
+many as you like, but you don't need to import all of them. You can
+find a theme put the command in terminal I put earlier:
+`tools/preview.rb schemes/*`
+that will cycle you through the colors.
 
 
 {% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/8_file_itermcolors.png 800 %}
