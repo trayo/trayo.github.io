@@ -15,3 +15,9 @@ make it more visually pleasing.
 
 In this tutorial we are going to change our prompt to
 have an emoji instead of the dollar sign ($) that you've seen.
+
+When we left off in the last tutorial we ended up with
+a terminal window similar to this:
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png 850 'So awesome!' %}
