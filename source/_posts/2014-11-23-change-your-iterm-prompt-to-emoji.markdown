@@ -31,3 +31,13 @@ are, at least, mildly aware that it exists. Open up iTerm
 and navigate to your root directory. If terminal hasn't
 opened in your root directory the easiest way to get
 there is to type `cd` in and push enter.
+
+From your root directory, open up your bash profile in
+Text Edit, the built in Mac text editor. The simple way
+to do this is to type:
+`open .bash_profile`
+in your terminal. You should get something like the
+following:
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
