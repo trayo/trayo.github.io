@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Iterm, | Yoder Bacon]]></title>
   <link href="http://trayo.github.io/blog/categories/iterm/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-11-28T11:56:37-07:00</updated>
+  <updated>2014-11-28T13:03:30-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -25,12 +25,22 @@ on how to customize the colors and background of iTerm to
 make it more visually pleasing.</p>
 
 <p>In this tutorial we are going to change our prompt to
-have an emoji instead of the dollar sign ($) that you&rsquo;ve seen.</p>
+have an emoji instead of a dollar sign ($), which can
+be seen in the following screenshot.</p>
 
 <p>When we left off in the last tutorial we ended up with
 a terminal window similar to this:</p>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png</a>&#8221; width=&#8221;400&#8221; title=&#8221;&lsquo;Still awesome!&rsquo;&#8221; ></p>
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Still awesome!&rsquo;&#8221; ></p>
+
+<h2>Let&rsquo;s do that change thing!</h2>
+
+<p>The first thing you&rsquo;re going to want to do is open your
+bash profile. I&rsquo;m also assuming you have one made already
+are, at least, mildly aware that it exists. Open up iTerm
+and navigate to your root directory. If terminal hasn&rsquo;t
+opened in your root directory the easiest way to get
+there is to type <code>cd</code> in and push enter.</p>
 ]]></content>
   </entry>
   
