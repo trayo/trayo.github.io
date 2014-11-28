@@ -4,7 +4,7 @@
   <title><![CDATA[Yoder Bacon]]></title>
   <link href="http://trayo.github.io/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-11-28T11:13:22-07:00</updated>
+  <updated>2014-11-28T11:56:37-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Change Your iTerm Prompt to Emoji]]></title>
+    <link href="http://trayo.github.io/blog/2014/11/23/change-your-iterm-prompt-to-emoji/"/>
+    <updated>2014-11-23T16:52:58-07:00</updated>
+    <id>http://trayo.github.io/blog/2014/11/23/change-your-iterm-prompt-to-emoji</id>
+    <content type="html"><![CDATA[<p>Hello and welcome to my tutorial on how to further
+customize your iTerm. This tutorial follows
+<a href="http://yoderbacon.com/blog/2014/10/22/how-to-customize-iterm/">my previous tutorial</a>
+on how to customize the colors and background of iTerm to
+make it more visually pleasing.</p>
+
+<p>In this tutorial we are going to change our prompt to
+have an emoji instead of the dollar sign ($) that you&rsquo;ve seen.</p>
+
+<p>When we left off in the last tutorial we ended up with
+a terminal window similar to this:</p>
+
+<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png" width="400" title="'Still awesome!'" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Customize iTerm]]></title>
