@@ -13,7 +13,8 @@ on how to customize the colors and background of iTerm to
 make it more visually pleasing.  
 
 In this tutorial we are going to change our prompt to
-have an emoji instead of the dollar sign ($) that you've seen.
+have an emoji instead of a dollar sign ($), which can
+be seen in the following screenshot.
 
 When we left off in the last tutorial we ended up with
 a terminal window similar to this:
@@ -24,8 +25,9 @@ a terminal window similar to this:
 
 ## Let's do that change thing!
 
-Here you will see the dollar sign I was referencing. We
-can change that to anything we want, but more
-specifically we want a sweet emoji.
-
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 700 'Still awesome!' %}
+The first thing you're going to want to do is open your
+bash profile. I'm also assuming you have one made already
+are, at least, mildly aware that it exists. Open up iTerm
+and navigate to your root directory. If terminal hasn't
+opened in your root directory the easiest way to get
+there is to type `cd` in and push enter.
