@@ -3,7 +3,6 @@ layout: post
 title: "Change Your iTerm Prompt to Emoji"
 date: 2014-11-23 16:52:58 -0700
 comments: true
-published: false
 categories: iterm, vim, terminal, themes, schemes
 ---
 
@@ -20,4 +19,4 @@ When we left off in the last tutorial we ended up with
 a terminal window similar to this:
 
 
-{% img top https://github.com/trayo/trayo.github.io/blob/source/source/_posts/images_change_prompt/1_before.png 850 'Still awesome!' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png 400 'Still awesome!' %}
