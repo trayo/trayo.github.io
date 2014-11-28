@@ -51,6 +51,8 @@ $ cd Documents/
 $ git clone https://github.com/mbadolato/iTerm2-Color-Schemes  
 ```
 
+The creators of the repository were kind enough
+
 
 Still in terminal, open up preferences. This can be done either one of two ways:  
 from the menu bar under iTerm > Preferences  

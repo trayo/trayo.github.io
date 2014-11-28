@@ -76,11 +76,20 @@ Your bash profile should now have your emoji in it!
 
 
 I *highly* recommend adding a space or two after the
-emoji, otherwise you may end typing inside the emoji.
+emoji, otherwise you may end typing inside the emoji.  
 Also, the reason I recommend using Apple's TextEdit
 is because if you ended up using Atom or another
 text editor, you're emoji might end up look like the
 following:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/7_text_edit_pizza.png 700 'So sad.' %}
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/8_atom_emoji.png 700 'So sad.' %}
+
+
+## Final Product
+
+Open a new tab or iTerm window and it should look as
+awesome as this:
+
+
+{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/9_final_pizza.png 700 'Wow. Such pizza. Very emoji. So amaze.' %}
