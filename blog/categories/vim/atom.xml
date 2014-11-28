@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Vim, | Yoder Bacon]]></title>
   <link href="http://trayo.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-11-28T13:03:30-07:00</updated>
+  <updated>2014-11-28T15:19:27-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -31,7 +31,7 @@ be seen in the following screenshot.</p>
 <p>When we left off in the last tutorial we ended up with
 a terminal window similar to this:</p>
 
-<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Still awesome!&rsquo;&#8221; ></p>
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png</a>&#8221; width=&#8221;600&#8221; title=&#8221;&lsquo;Still awesome!&rsquo;&#8221; ></p>
 
 <h2>Let&rsquo;s do that change thing!</h2>
 
@@ -41,6 +41,55 @@ are, at least, mildly aware that it exists. Open up iTerm
 and navigate to your root directory. If terminal hasn&rsquo;t
 opened in your root directory the easiest way to get
 there is to type <code>cd</code> in and push enter.</p>
+
+<p>From your root directory, open up your bash profile in
+Text Edit, the built in Apple text editor. The simple way
+to do this is to type:
+<code>open .bash_profile</code>
+in your terminal. You should get something like the
+following:</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/3_open_bash.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/3_open_bash.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;So scary!&rsquo;&#8221; ></p>
+
+<p>In this file you&rsquo;re going to look for <code>\$</code>. For me it was
+at the bottom of the file. You can also find it doing a
+search with <code>⌘+F</code>.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/4_text_edit_dollar.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/4_text_edit_dollar.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Did you find it?&rsquo;&#8221; ></p>
+
+<p>Once you find it, highlight the leading escape <code>\</code> and
+the <code>$</code>. Then open up the Apple special characters
+menu with <code>^ ⌘ Space</code> or by finding it at the bottom of
+the edit menu.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/5_special_characters.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/5_special_characters.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Did you find it?&rsquo;&#8221; ></p>
+
+<p>This will open up the built Apple menu with special
+characters and emoji. Here you can select any emoji
+you&rsquo;d like, but, obviously, pizza is the best emoji
+and it&rsquo;ll be the one I&rsquo;ll be selecting.</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/6_special_pizza.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/6_special_pizza.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;My spirit animal.&rsquo;&#8221; ></p>
+
+<p>Your bash profile should now have your emoji in it!</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/7_text_edit_pizza.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/7_text_edit_pizza.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Yup, definitely the best.&rsquo;&#8221; ></p>
+
+<p>I <em>highly</em> recommend adding a space or two after the
+emoji, otherwise you may end typing inside the emoji.<br/>
+Also, the reason I recommend using Apple&rsquo;s TextEdit
+is because if you ended up using Atom or another
+text editor, you&rsquo;re emoji might end up look like the
+following:</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/8_atom_emoji.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/8_atom_emoji.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;So sad.&rsquo;&#8221; ></p>
+
+<h2>Final Product</h2>
+
+<p>Open a new tab or iTerm window and it should look as
+awesome as this:</p>
+
+<p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/9_final_pizza.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/9_final_pizza.png</a>&#8221; width=&#8221;700&#8221; title=&#8221;&lsquo;Wow. Such pizza. Very emoji. So amaze.&rsquo;&#8221; ></p>
 ]]></content>
   </entry>
   
@@ -84,6 +133,14 @@ I used my Documents folder.</p>
 $ git clone https://github.com/mbadolato/iTerm2-Color-Schemes  
 </code></pre>
 
+<p>The creators of the repository were kind enough to include an awesome terminal command
+that will let you cycle through all the colors and find one that you like. Simply
+enter this command in your terminal:
+<code>tools/preview.rb schemes/*</code></p>
+
+<p>And it will cycle through the schemes when you push a button on your keyboard. You can
+exit the cycle by hitting <code>ctrl + C</code> when you find one that you want to import.</p>
+
 <p>Still in terminal, open up preferences. This can be done either one of two ways:<br/>
 from the menu bar under iTerm > Preferences<br/>
 or use the keyboard shortcut ( ⌘ + , ) .</p>
@@ -108,9 +165,10 @@ that we cloned.</p>
 <p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/7_profiles_color_import.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/7_profiles_color_import.png</a>&#8221; width=&#8221;800&#8221;></p>
 
 <p>Choose the theme that you would like to import. You can import as
-many as you like, but you don&rsquo;t need to import all of them. I chose by looking at
-<a href="http://iterm2colorschemes.com/">iterm2colorschemes.com</a> and making a list of the
-ones that caught my eye and trying each one out.</p>
+many as you like, but you don&rsquo;t need to import all of them. You can
+find a theme put the command in terminal I put earlier:
+<code>tools/preview.rb schemes/*</code>
+that will cycle you through the colors.</p>
 
 <p><img class="top <a" src="href="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/8_file_itermcolors.png">https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/8_file_itermcolors.png</a>&#8221; width=&#8221;800&#8221;></p>
 
