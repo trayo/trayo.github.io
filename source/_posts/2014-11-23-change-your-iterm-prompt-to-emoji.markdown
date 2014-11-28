@@ -20,4 +20,4 @@ When we left off in the last tutorial we ended up with
 a terminal window similar to this:
 
 
-{% img top https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png 850 'So awesome!' %}
+{% img top https://github.com/trayo/trayo.github.io/blob/source/source/_posts/images_change_prompt/1_before.png 850 'Still awesome!' %}
