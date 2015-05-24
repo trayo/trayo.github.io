@@ -4,7 +4,7 @@
   <title><![CDATA[Yoder Bacon]]></title>
   <link href="http://trayo.github.io/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2014-11-28T15:19:27-07:00</updated>
+  <updated>2015-05-24T12:05:06-06:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -12,6 +12,267 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How I Customized Pry]]></title>
+    <link href="http://trayo.github.io/blog/2015/05/23/how-i-customized-pry/"/>
+    <updated>2015-05-23T11:20:31-06:00</updated>
+    <id>http://trayo.github.io/blog/2015/05/23/how-i-customized-pry</id>
+    <content type="html"><![CDATA[<p>In this tutorial I&rsquo;m going to be showing off a couple different ways that I customized the <a href="https://github.com/pry/pry">pry gem</a>.</p>
+
+<p>You&rsquo;ll need to add a <code>.pryrc</code> file to your root directory. You can do it with this command: <code>touch ~/.pryrc</code>.</p>
+
+<h2>Block Commands</h2>
+
+<p>Pry block commands are a way for you to add shortcuts to every pry session.</p>
+
+<p>The first one I set up was for the built in <code>play</code> method that pry supports. I found myself copying lines of code from a <code>binding.pry</code> breakpoint that I was in and pasting them line by line to see the result of the output. This can be slow and painful when there&rsquo;s a lot of code in a method.</p>
+
+<p>The <code>play</code> command allows you to play a line of code or lines of code using a range of numbers, using the flag <code>-l</code>. Here is an example:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; 1: require "pry"; binding.pry
+</span><span class='line'>   2:
+</span><span class='line'>   3: p "Hello #{name}"
+</span><span class='line'>   4: p "Konichiwa #{name}"
+</span><span class='line'>   5: p "Hola #{name}"
+</span><span class='line'>   6:
+</span><span class='line'>
+</span><span class='line'>[1] pry (main)&gt; play -l 3
+</span><span class='line'>NameError: undefined local variable or method `name' for main:Object
+</span><span class='line'>from (pry):1:in `&lt;main&gt;'
+</span><span class='line'>
+</span><span class='line'>[2] pry (main)&gt; name = "travis"
+</span><span class='line'>=&gt; "travis"
+</span><span class='line'>
+</span><span class='line'>[3] pry (main)&gt; play -l 3
+</span><span class='line'>"Hello travis"
+</span><span class='line'>=&gt; "Hello travis"
+</span><span class='line'>
+</span><span class='line'>[4] pry (main)&gt; name = "Solid Snake"
+</span><span class='line'>=&gt; "Solid Snake"
+</span><span class='line'>
+</span><span class='line'>[5] pry (main)&gt; play -l 3..5
+</span><span class='line'>"Hello Solid Snake"
+</span><span class='line'>"Konichiwa Solid Snake"
+</span><span class='line'>"Hola Solid Snake"
+</span><span class='line'>=&gt; "Hola Solid Snake"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is where block commands come in to play. I wanted to make it slightly easier to type <code>play -l</code> so I added this to my <code>.pryrc</code>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Pry::Commands.block_command 'pl', "Alias for 'play -l'" do |lines|
+</span><span class='line'>  _pry_.run_command("play -l #{lines}")
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>Pry::Commands.block_command 'pl'</code> says to make a command with the name &lsquo;pl&rsquo;.<br/>
+<code>"Alias for 'play -l'"</code> is a description of the command.<br/>
+You can have the method take parameters with <code>do |lines|</code>.<br/>
+<code>_pry_.run_command</code> uses the current pry instance to run a pry command.<br/>
+And then we tell it to run the <code>play -l</code> command with a line or range of lines.</p>
+
+<p><em>Note: the code within the block is actually plain ruby code</em></p>
+
+<p>Now in our example we can do:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; 1: require "pry"; binding.pry
+</span><span class='line'>   2:
+</span><span class='line'>   3: p "Hello #{name}"
+</span><span class='line'>   4: p "Konichiwa #{name}"
+</span><span class='line'>   5: p "Hola #{name}"
+</span><span class='line'>   6:
+</span><span class='line'>
+</span><span class='line'>[1] pry (main)&gt; pl 3
+</span><span class='line'>NameError: undefined local variable or method `name' for main:Object
+</span><span class='line'>from (pry):1:in `&lt;main&gt;'
+</span><span class='line'>
+</span><span class='line'>[2] pry (main)&gt; name = "Liquid Snake"
+</span><span class='line'>=&gt; "Liquid Snake"
+</span><span class='line'>
+</span><span class='line'>[3] pry (main)&gt; pl 3..5
+</span><span class='line'>"Hello Liquid Snake"
+</span><span class='line'>"Konichiwa Liquid Snake"
+</span><span class='line'>"Hola Liquid Snake"
+</span><span class='line'>=&gt; "Hola Liquid Snake"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Simple right? Here&rsquo;s another one that I&rsquo;ve enjoyed using:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Pry::Commands.block_command 'jk', "Alias for 'exit!'" do
+</span><span class='line'>  exit
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With this command I can type <code>jk</code> to exit in the same way that you can type <code>exit!</code>. Combined with using <code>CTRL + D</code> to step through breakpoints it feels nice and quick to enter a binding, check a variable, jump to a different breakpoint to check it again and exit out.</p>
+
+<h2>The Edit Command and Your Default Editor</h2>
+
+<p>The <code>edit</code> command is super useful for quickly editing code in a heavy pry session without losing possible variables or methods. Here&rsquo;s how to setup your default editor, simply replace &ldquo;vim&rdquo; with the editor of your choice:</p>
+
+<p><code>Pry.config.editor = "vim"</code></p>
+
+<p>Here&rsquo;s an example of using edit:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[1] pry (main)&gt; def hello
+</span><span class='line'>[1] pry (main)*   puts "Hello"
+</span><span class='line'>[1] pry (main)* end
+</span><span class='line'>=&gt; :hello
+</span><span class='line'>[2] pry (main)&gt; edit hello</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Vim opens for editing:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>1 def hello
+</span><span class='line'>2   puts "Hello"
+</span><span class='line'>3 end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We add a line of code:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>1 def hello
+</span><span class='line'>2   puts "Hello,"
+</span><span class='line'>3   puts "Mr. Bond"
+</span><span class='line'>4 end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After saving and closing Vim, we return back to pry:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; :hello
+</span><span class='line'>[3] pry (main)&gt; show-source hello
+</span><span class='line'>
+</span><span class='line'>From: (pry) @ line 4:
+</span><span class='line'>Owner: Object
+</span><span class='line'>Visibility: public
+</span><span class='line'>Number of lines: 4
+</span><span class='line'>
+</span><span class='line'>def hello
+</span><span class='line'>  puts "Hello,"
+</span><span class='line'>  puts "Mr. Bond"
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>[4] pry (main)&gt; hello
+</span><span class='line'>Hello,
+</span><span class='line'>Mr. Bond
+</span><span class='line'>=&gt; nil</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Prompt Name</h2>
+
+<p>This command can be used in combination with having a <code>.pryrc</code> in each project folder that you&rsquo;re working on. This would let you see the project name as your pry prompt like so:</p>
+
+<p><code>[1] my_project (main)&gt;</code></p>
+
+<p>Otherwise, if you use the <code>.pryrc</code> in your root directory, it&rsquo;ll be applied globally. I decided I wanted to make pry look a little more awesome so I stuck an emoji in there. Here&rsquo;s the command you use:</p>
+
+<p><code>Pry.config.prompt_name = "🙏 "</code></p>
+
+<p><em>Note: I put an extra space on the end so it&rsquo;s centered.</em></p>
+
+<p>Now my prompt looks like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[1] 🙏(main)&gt; def pray
+</span><span class='line'>[1] 🙏(main)*   puts "let's hope this works"
+</span><span class='line'>[1] 🙏(main)* end
+</span><span class='line'>=&gt; :pray
+</span><span class='line'>[2] 🙏(main)&gt; pray
+</span><span class='line'>let's hope this works
+</span><span class='line'>=&gt; nil
+</span><span class='line'>[3] 🙏(main)&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>That&rsquo;s It</h2>
+
+<p>I&rsquo;m continuing to try and find ways to customize pry further to improve productivity or make it look awesome. If you&rsquo;re interested in other ways you can customize pry, check out their <a href="https://github.com/pry/pry/wiki/Customization-and-configuration">guide on github.</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Change Your iTerm Prompt to Emoji]]></title>

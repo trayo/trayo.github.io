@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Terminal | Yoder Bacon]]></title>
-  <link href="http://trayo.github.io/blog/categories/terminal/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Gem, | Yoder Bacon]]></title>
+  <link href="http://trayo.github.io/blog/categories/gem/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
   <updated>2015-05-24T12:05:06-06:00</updated>
   <id>http://trayo.github.io/</id>

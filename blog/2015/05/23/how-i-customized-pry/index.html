@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Yoder Bacon</title>
+  <title>How I Customized Pry - Yoder Bacon</title>
   <meta name="author" content="Travis Yoder">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://trayo.github.io">
+  <link rel="canonical" href="http://trayo.github.io/blog/2015/05/23/how-i-customized-pry">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Yoder Bacon" type="application/atom+xml">
@@ -68,15 +68,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2015/05/23/how-i-customized-pry/">How I Customized Pry</a></h1>
+      <h1 class="entry-title">How I Customized Pry</h1>
     
     
       <p class="meta">
@@ -99,7 +96,7 @@
   </header>
 
 
-  <div class="entry-content"><p>In this tutorial I&rsquo;m going to be showing off a couple different ways that I customized the <a href="https://github.com/pry/pry">pry gem</a>.</p>
+<div class="entry-content"><p>In this tutorial I&rsquo;m going to be showing off a couple different ways that I customized the <a href="https://github.com/pry/pry">pry gem</a>.</p>
 
 <p>You&rsquo;ll need to add a <code>.pryrc</code> file to your root directory. You can do it with this command: <code>touch ~/.pryrc</code>.</p>
 
@@ -353,129 +350,16 @@ And then we tell it to run the <code>play -l</code> command with a line or range
 
 <p>I&rsquo;m continuing to try and find ways to customize pry further to improve productivity or make it look awesome. If you&rsquo;re interested in other ways you can customize pry, check out their <a href="https://github.com/pry/pry/wiki/Customization-and-configuration">guide on github.</a></p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/23/change-your-iterm-prompt-to-emoji/">Change Your iTerm Prompt to Emoji</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Travis Yoder</span></span>
 
-<time datetime="2014-11-23T16:52:58-07:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hello and welcome to my tutorial on how to further
-customize your iTerm. This tutorial follows
-<a href="http://yoderbacon.com/blog/2014/10/22/how-to-customize-iterm/">my previous tutorial</a>
-on how to customize the colors and background of iTerm to
-make it more visually pleasing.</p>
-
-<p>In this tutorial we are going to change our prompt to
-have an emoji instead of a dollar sign ($), which can
-be seen in the following screenshot.</p>
-
-<p>When we left off in the last tutorial we ended up with
-a terminal window similar to this:</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/1_before.png" width="600" title="'Still awesome!'" ></p>
-
-<h2>Let&rsquo;s do that change thing!</h2>
-
-<p>The first thing you&rsquo;re going to want to do is open your
-bash profile. I&rsquo;m also assuming you have one made already
-are, at least, mildly aware that it exists. Open up iTerm
-and navigate to your root directory. If terminal hasn&rsquo;t
-opened in your root directory the easiest way to get
-there is to type <code>cd</code> in and push enter.</p>
-
-<p>From your root directory, open up your bash profile in
-Text Edit, the built in Apple text editor. The simple way
-to do this is to type:
-<code>open .bash_profile</code>
-in your terminal. You should get something like the
-following:</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/3_open_bash.png" width="700" title="'So scary!'" ></p>
-
-<p>In this file you&rsquo;re going to look for <code>\$</code>. For me it was
-at the bottom of the file. You can also find it doing a
-search with <code>⌘+F</code>.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/4_text_edit_dollar.png" width="700" title="'Did you find it?'" ></p>
-
-<p>Once you find it, highlight the leading escape <code>\</code> and
-the <code>$</code>. Then open up the Apple special characters
-menu with <code>^ ⌘ Space</code> or by finding it at the bottom of
-the edit menu.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/5_special_characters.png" width="700" title="'Did you find it?'" ></p>
-
-<p>This will open up the built Apple menu with special
-characters and emoji. Here you can select any emoji
-you&rsquo;d like, but, obviously, pizza is the best emoji
-and it&rsquo;ll be the one I&rsquo;ll be selecting.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/6_special_pizza.png" width="700" title="'My spirit animal.'" ></p>
-
-<p>Your bash profile should now have your emoji in it!</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/7_text_edit_pizza.png" width="700" title="'Yup, definitely the best.'" ></p>
-
-<p>I <em>highly</em> recommend adding a space or two after the
-emoji, otherwise you may end typing inside the emoji.<br/>
-Also, the reason I recommend using Apple&rsquo;s TextEdit
-is because if you ended up using Atom or another
-text editor, you&rsquo;re emoji might end up look like the
-following:</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/8_atom_emoji.png" width="700" title="'So sad.'" ></p>
-
-<h2>Final Product</h2>
-
-<p>Open a new tab or iTerm window and it should look as
-awesome as this:</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_change_prompt/9_final_pizza.png" width="700" title="'Wow. Such pizza. Very emoji. So amaze.'" ></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/22/how-to-customize-iterm/">How to Customize iTerm</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -487,187 +371,39 @@ awesome as this:</p>
   
 
 
-<time datetime="2014-10-22T20:12:24-06:00" pubdate data-updated="true"></time>
-        
-      </p>
+<time datetime="2015-05-23T11:20:31-06:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/gem/'>gem,</a>, <a class='category' href='/blog/categories/gems/'>gems,</a>, <a class='category' href='/blog/categories/pry/'>pry,</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>Hello!<br/>
-Welcome to my tutorial on customizing iTerm!
-In this tutorial I&rsquo;m going to show you the basics of importing color schemes,
-customizing those schemes and setting up a background. The shot below is our
-destination final product.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png" width="850" title="'So awesome!'" ></p>
-
-<h2>Let&rsquo;s get started!</h2>
-
-<p>Here&rsquo;s what my terminal looked like when I started, with a shot of vim for good measure:</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/2_term_default.png" width="375" title="'So boring!'" >
-<img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/1_term_default_vim.png" width="350" title="'Kind of cool, but still not super cool.'" ></p>
-
-<p>A quick <a href="http://goo.gl/Y1A32Q">google search</a> will show some
-results for awesome color schemes already made by the community.<br/>
-We&rsquo;re going to use the schemes available at <a href="http://iterm2colorschemes.com/">iterm2colorschemes.com</a>
-since they have a bunch of ready made schemes available.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/3_theme_examples.png" width="400" title="'Mathematical!'" ></p>
-
-<p>When you find one you like we&rsquo;re going to clone
-<a href="https://github.com/mbadolato/iTerm2-Color-Schemes">the repository</a> off of Github. The files
-aren&rsquo;t very large and you&rsquo;ll have them readily available for quickly switching between colors.</p>
-
-<p><img class="top" src="http://i.imgur.com/N1p1G40.png" width="400" title="'ALL THE THINGS'" ></p>
-
-<p>Open up that terminal and navigate to a directory where you would like to clone the repo.
-I used my Documents folder.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd Documents/  
-</span><span class='line'>$ git clone https://github.com/mbadolato/iTerm2-Color-Schemes  </span></code></pre></td></tr></table></div></figure>
-
-
-<p>The creators of the repository were kind enough to include an awesome terminal command
-that will let you cycle through all the colors and find one that you like. Simply
-enter this command in your terminal:
-<code>tools/preview.rb schemes/*</code></p>
-
-<p>And it will cycle through the schemes when you push a button on your keyboard. You can
-exit the cycle by hitting <code>ctrl + C</code> when you find one that you want to import.</p>
-
-<p>Still in terminal, open up preferences. This can be done either one of two ways:<br/>
-from the menu bar under iTerm > Preferences<br/>
-or use the keyboard shortcut ( ⌘ + , ) .</p>
-
-<p>Once you&rsquo;re in the preferences window, click on the <em>profiles</em> button.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/4_preferences.png" width="800"></p>
-
-<p>Then click on the <em>colors</em> tab.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/5_profiles.png" width="800"></p>
-
-<h2>Importing colors!</h2>
-
-<p>At the bottom there is a <em>load presets</em> button that will let us import the color themes
-that we cloned.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/6_profiles_color_tab.png" width="800"></p>
-
-<p>In the little drop down window click <em>import</em>.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/7_profiles_color_import.png" width="800"></p>
-
-<p>Choose the theme that you would like to import. You can import as
-many as you like, but you don&rsquo;t need to import all of them. You can
-find a theme put the command in terminal I put earlier:
-<code>tools/preview.rb schemes/*</code>
-that will cycle you through the colors.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/8_file_itermcolors.png" width="800"></p>
-
-<p>The theme you choose will then appear in the <em>load presets</em> drop down where you can select it.
-It should reflect immediately because we are working on the default profile.</p>
-
-<h2>If it didn&rsquo;t work right away:</h2>
-
-<p>If for some reason it didn&rsquo;t update immediately, exit preferences and open up the profile
-chooser by hitting ( ⌘ + i ). You will get the following window.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png" width="500"></p>
-
-<p>Select the profile that you are working with. If you didn&rsquo;t create a profile, then your
-profile will be the one available called <em>default</em>. Then choose <em>change profile</em>.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png" width="600"></p>
-
-<p>Now we should see our colors change! Woo!</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/10_still_pink.png" width="400"></p>
-
-<h2>Customize a little more!</h2>
-
-<p>In the <em>colors tab</em> in <em>preferences</em> there are some color boxes that change the overall
-colors. The background box here is used you want to change your background color, but at the end of the tutorial I
-will show you how to select a wallpaper instead of having a plain solid color for a background.</p>
-
-<p>The bar for me that is pink with the time on it didn&rsquo;t change and doesn&rsquo;t quite match the rest
-of the colors in the scheme so it becomes a prime candidate for customizing.</p>
-
-<p>The colors back on <em>preferences</em> correspond directly to what is seen on screen and this is what
-the scheme is changing.<br/>
-Of the two magenta boxes, the one I want is on the left.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/11_change_magenta.png" width="800"></p>
-
-<p>The following window shows up when it&rsquo;s clicked. The tabs at the top of this window have some
-different ways to pick colors. I used the color wheel, but the color palette tab in the middle
-is an awesome source too.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/12_under_middle_line.png" width="400"></p>
-
-<p>If you use the color wheel, I recommend keeping the arrow on the bar to the right of the color
-wheel slightly under the middle line, but it will vary based on your preferences and scheme.<br/>
-Now we have a new color for the bar.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/13_new_bar_color.png" width="400"></p>
-
-<h2>If it didn&rsquo;t work right away:</h2>
-
-<p>Again, if for some reason it didn&rsquo;t update immediately, exit preferences and open up the profile
-chooser by hitting ( ⌘ + i ). You will get the following window.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/17_command_eye.png" width="500"></p>
-
-<p>Select the profile that you are working with. If you didn&rsquo;t create a profile, then your
-profile will be the one available called <em>default</em>. Then choose <em>change profile</em>.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/18_change_profile.png" width="600"></p>
-
-<h2>Customize the background image!</h2>
-
-<p>Back in the <em>Preferences</em> and under <em>Profiles</em>, open the <em>Window</em> tab.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/14_click_window.png" width="600"></p>
-
-<p>Click on the little check box for <em>Background Image</em> to open the window where you can select your background.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/15_click_background_box.png" width="600"></p>
-
-<p>Depending on your background&rsquo;s resolution, I recommend turing on <em>Tile Image</em>.</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/16_tile_image.png" width="600"></p>
-
-<p>If your background is the same resolution of you monitor or larger, this will prevent the background image from scaling when the window size changes.</p>
-
-<h2>Final product!</h2>
-
-<p>This is again the final product. It&rsquo;s more pleasing that just a plain black background and some white text.
-You can also see the way tiling the image works when the window is half size and full size.</p>
-
-<p>Thank you for reading!</p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/19_final_shot_small.png" width="600"></p>
-
-<p><img class="top" src="https://raw.githubusercontent.com/trayo/trayo.github.io/source/source/_posts/images_customize_iterm/20_final_shot_fullscreen.png" width="600"></p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trayo.github.io/blog/2015/05/23/how-i-customized-pry/" data-via="" data-counturl="http://trayo.github.io/blog/2015/05/23/how-i-customized-pry/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/11/23/change-your-iterm-prompt-to-emoji/" title="Previous Post: Change Your iTerm Prompt to Emoji">&laquo; Change Your iTerm Prompt to Emoji</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
-<aside class="sidebar">
+
+  <aside class="sidebar">
    
 <form action="https://www.google.com/search" method="get">
   <fieldset role="search">
@@ -702,6 +438,7 @@ You can also see the way tiling the image works when the window is half size and
 
   
 </aside>
+
 
 
     </div>
