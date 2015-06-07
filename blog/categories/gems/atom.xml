@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Gems, | Yoder Bacon]]></title>
   <link href="http://trayo.github.io/blog/categories/gems/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2015-05-24T12:05:06-06:00</updated>
+  <updated>2015-06-07T15:06:01-06:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[How I Customized Pry]]></title>
-    <link href="http://trayo.github.io/blog/2015/05/23/how-i-customized-pry/"/>
+    <title type="html"><![CDATA[Customizing Pry]]></title>
+    <link href="http://trayo.github.io/blog/2015/05/23/customizing-pry/"/>
     <updated>2015-05-23T11:20:31-06:00</updated>
-    <id>http://trayo.github.io/blog/2015/05/23/how-i-customized-pry</id>
+    <id>http://trayo.github.io/blog/2015/05/23/customizing-pry</id>
     <content type="html"><![CDATA[<p>In this tutorial I&rsquo;m going to be showing off a couple different ways that I customized the <a href="https://github.com/pry/pry">pry gem</a>.</p>
 
 <p>You&rsquo;ll need to add a <code>.pryrc</code> file to your root directory. You can do it with this command: <code>touch ~/.pryrc</code>.</p>
@@ -96,7 +96,9 @@ from (pry):1:in `&lt;main&gt;'
 =&gt; "Hola Liquid Snake"
 </code></pre>
 
-<p>Simple right? Here&rsquo;s another one that I&rsquo;ve enjoyed using:</p>
+<p>Simple right?</p>
+
+<h3>Alias &lsquo;jk&rsquo; for &lsquo;exit!&rsquo;</h3>
 
 <pre><code>Pry::Commands.block_command 'jk', "Alias for 'exit!'" do
   exit
