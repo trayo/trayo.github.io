@@ -3,7 +3,7 @@ layout: post
 title: "Customizing Pry"
 date: 2015-05-23 11:20:31 -0600
 comments: true
-categories: pry, gem, gems, terminal
+categories: pry gem gems terminal
 ---
 
 In this tutorial I'm going to be showing off a couple different ways that I customized the [pry gem](https://github.com/pry/pry).

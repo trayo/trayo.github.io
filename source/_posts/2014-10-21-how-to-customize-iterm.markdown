@@ -3,7 +3,7 @@ layout: post
 title: "How to Customize iTerm"
 date: 2014-10-22 20:12:24 -0600
 comments: true
-categories: iterm, vim, terminal, themes, schemes
+categories: iterm vim terminal themes schemes
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Change Your iTerm Prompt to Emoji"
 date: 2014-11-23 16:52:58 -0700
 comments: true
-categories: iterm, vim, terminal, themes, schemes
+categories: iterm vim terminal themes schemes
 ---
 
 Hello and welcome to my tutorial on how to further
