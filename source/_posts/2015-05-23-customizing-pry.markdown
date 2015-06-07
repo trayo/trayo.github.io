@@ -2,7 +2,6 @@
 layout: post
 title: "Customizing Pry"
 date: 2015-05-23 11:20:31 -0600
-published: false
 comments: true
 categories: pry, gem, gems, terminal
 ---
