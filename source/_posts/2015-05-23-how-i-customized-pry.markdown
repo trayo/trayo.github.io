@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I Customized Pry"
+title: "Customizing Pry"
 date: 2015-05-23 11:20:31 -0600
 comments: true
 categories: pry, gem, gems, terminal
@@ -88,7 +88,9 @@ from (pry):1:in `<main>'
 => "Hola Liquid Snake"
 ```
 
-Simple right? Here's another one that I've enjoyed using:
+Simple right? 
+
+### Alias 'jk' for 'exit!'
 
 ```
 Pry::Commands.block_command 'jk', "Alias for 'exit!'" do
