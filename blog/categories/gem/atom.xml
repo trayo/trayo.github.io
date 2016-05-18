@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Gem, | Yoder Bacon]]></title>
+  <title><![CDATA[Category: Gem | Yoder Bacon]]></title>
   <link href="http://trayo.github.io/blog/categories/gem/atom.xml" rel="self"/>
   <link href="http://trayo.github.io/"/>
-  <updated>2015-06-07T15:06:01-06:00</updated>
+  <updated>2016-05-17T20:15:07-07:00</updated>
   <id>http://trayo.github.io/</id>
   <author>
     <name><![CDATA[Travis Yoder]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Customizing Pry]]></title>
     <link href="http://trayo.github.io/blog/2015/05/23/customizing-pry/"/>
-    <updated>2015-05-23T11:20:31-06:00</updated>
+    <updated>2015-05-23T10:20:31-07:00</updated>
     <id>http://trayo.github.io/blog/2015/05/23/customizing-pry</id>
     <content type="html"><![CDATA[<p>In this tutorial I&rsquo;m going to be showing off a couple different ways that I customized the <a href="https://github.com/pry/pry">pry gem</a>.</p>
 
