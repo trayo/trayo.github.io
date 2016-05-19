@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Jump | Yoder Bacon]]></title>
+  <link href="http://trayo.github.io/blog/categories/jump/atom.xml" rel="self"/>
+  <link href="http://trayo.github.io/"/>
+  <updated>2016-05-18T21:53:31-07:00</updated>
+  <id>http://trayo.github.io/</id>
+  <author>
+    <name><![CDATA[Travis Yoder]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Jump and Delete Words in iTerm]]></title>
+    <link href="http://trayo.github.io/blog/2016/05/18/jump-and-delete-words-in-iterm/"/>
+    <updated>2016-05-18T20:51:59-07:00</updated>
+    <id>http://trayo.github.io/blog/2016/05/18/jump-and-delete-words-in-iterm</id>
+    <content type="html"><![CDATA[<p>I really feel like I&rsquo;m missing out on being able to jump words when working in terminal and found some blogs on how to do it by using <code>option</code>. I tried it for a while and found the <code>option</code> key to be placed in such a weird position on the Apple keyboards that I wouldn&rsquo;t use <code>option</code> and often forget about it while in the &ldquo;programming zone&rdquo;.</p>
+
+<p>I&rsquo;m already used to using <code>ctrl + f</code> and <code>ctrl + b</code> to move the cursor forward and backward in terminal and, instead of <code>option</code>, decided to give <code>ctrl + shift</code> a try. I found this to be easier to use given the placement of <code>capslock</code> (which should be your <code>ctrl</code>!) and <code>shift</code> on the keyboard, compared to <code>option</code>.</p>
+
+<p>If you use <code>ctrl + b</code> and <code>ctrl + f</code> to navigate cursor, I recommend give these steps a try. If you don&rsquo;t use those keyboard shortcuts they will take time to get used to, but I like them particularily because I don&rsquo;t have to lift my hands off of home row to reach the arrow keys.</p>
+
+<h2>How To Use Ctrl + Shift + f and Ctrl + Shift + b To Jump Words</h2>
+
+<p>To assign the shortcut open the iTerm preferences and choose the <code>keys</code> tab. Select the <code>+</code> button at the bottom to add a new shortcut. In the <code>Keyboard Shortcut</code> field, push the keys <code>ctrl + shift + b</code> or <code>ctrl + shift + f</code> and you should see something like <code>^⬆︎B</code> or <code>^⬆︎F</code>. Then, in the <code>Action</code> dropdown, select <code>Send Escape Sequence</code> and enter the same letter (<code>b</code> or <code>f</code>) as the keyboard shortcut you entered.</p>
+
+<p>Do it for the other key and that&rsquo;s all there is to it!</p>
+
+<h2>How To Assign Ctrl + Shift + Delete To Delete Whole Words</h2>
+
+<p>Assign a keyboard shortcut, in the same way as above, and use <code>ctrl + shift + delete</code> as the <code>Keyboard Shortcut</code>. Then for the <code>Action</code> select <code>Send Hex Code</code> and use the code <code>17</code> in the field.</p>
+
+<h2>How To Assign Option</h2>
+
+<p>Optionally, if you still want to use <code>option</code> instead of <code>ctrl + shift</code>, you can use <code>option + ⟵</code> and <code>option + ⟶</code> when assigning the keyboard shortcut to jump words and <code>option + delete</code> when assigning the keyboard shortcut for deleting words.</p>
+]]></content>
+  </entry>
+  
+</feed>
